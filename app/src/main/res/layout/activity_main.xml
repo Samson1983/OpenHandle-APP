@@ -1,0 +1,85 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!-- 原文字说明 -->
+    <TextView
+        android:id="@+id/tv_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="openHandle 仅供演示交流学习"
+        android:textSize="16sp"
+        android:textColor="#000000"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+
+    <!-- 官网链接 -->
+    <TextView
+        android:id="@+id/tv_website"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="openHandle官网: https://openhandle.ai"
+        android:autoLink="web"
+        android:textSize="14sp"
+        android:textColor="#0000EE"
+        app:layout_constraintTop_toBottomOf="@id/tv_title"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+    <!-- 本地服务器地址 -->
+    <TextView
+        android:id="@+id/tv_local_server"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🌐 本地服务器: 加载中..."
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        app:layout_constraintTop_toBottomOf="@id/tv_website"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+        
+    <!-- 启用屏幕截图按钮 -->
+    <Button
+        android:id="@+id/btn_enable_screenshot"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="启用屏幕截图功能"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="#4CAF50"
+        app:layout_constraintTop_toBottomOf="@id/tv_local_server"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>
+        
+    <!-- 截图状态提示 -->
+    <TextView
+        android:id="@+id/tv_screenshot_status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="屏幕截图功能未启用"
+        android:textSize="12sp"
+        android:textColor="#666666"
+        app:layout_constraintTop_toBottomOf="@id/btn_enable_screenshot"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"/>
+        
+    <!-- 悬浮窗控制按钮 -->
+<!--    <Button
+        android:id="@+id/btn_floating_window"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="显示悬浮窗"
+        android:textSize="14sp"
+        android:textColor="#FFFFFF"
+        android:background="#2196F3"
+        app:layout_constraintTop_toBottomOf="@id/tv_screenshot_status"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

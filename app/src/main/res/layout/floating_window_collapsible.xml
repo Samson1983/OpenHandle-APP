@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/floating_container"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <!-- 小图标（收缩状态） -->
+    <ImageButton
+        android:id="@+id/btn_toggle"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@android:drawable/ic_menu_more"
+        android:background="@drawable/circle_background"
+        android:contentDescription="展开/收缩"
+        android:padding="8dp"
+        android:elevation="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+    <!-- 展开的工具栏 -->
+    <LinearLayout
+        android:id="@+id/toolbar_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="horizontal"
+        android:padding="8dp"
+        android:elevation="8dp"
+        android:visibility="gone"
+        android:clickable="true">
+
+        <!-- 截图按钮 -->
+    <ImageButton
+        android:id="@+id/btn_screenshot"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@android:color/transparent"
+        android:contentDescription="截图"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    
+    <!-- 主页按钮 -->
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_manage"
+        android:background="@android:color/transparent"
+        android:contentDescription="主页"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    
+    <!-- 菜单按钮 -->
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_help"
+        android:background="@android:color/transparent"
+        android:contentDescription="菜单"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    
+    <!-- 设置按钮 -->
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_dialog_map"
+        android:background="@android:color/transparent"
+        android:contentDescription="设置"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    
+    <!-- 关闭按钮 -->
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_delete"
+        android:background="@android:color/transparent"
+        android:contentDescription="关闭"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+        
+        <!-- 收缩按钮 -->
+    <ImageButton
+        android:id="@+id/btn_collapse"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_more"
+        android:background="@android:color/transparent"
+        android:contentDescription="收缩"
+        android:padding="8dp"
+        android:clickable="true"
+        android:focusable="true"/>
+    </LinearLayout>
+
+</FrameLayout>

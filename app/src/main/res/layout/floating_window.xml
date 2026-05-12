@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="horizontal"
+    android:padding="8dp"
+    android:elevation="8dp"
+    android:radius="8dp">
+    
+    <!-- 截图按钮 -->
+    <ImageButton
+        android:id="@+id/btn_screenshot"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_camera"
+        android:background="@android:color/transparent"
+        android:contentDescription="截图"
+        android:padding="8dp"/>
+    
+    <!-- 主页按钮 -->
+    <ImageButton
+        android:id="@+id/btn_home"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_dialog_map"
+        android:background="@android:color/transparent"
+        android:contentDescription="主页"
+        android:padding="8dp"/>
+    
+    <!-- 菜单按钮 -->
+    <ImageButton
+        android:id="@+id/btn_menu"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_help"
+        android:background="@android:color/transparent"
+        android:contentDescription="菜单"
+        android:padding="8dp"/>
+    
+    <!-- 设置按钮 -->
+    <ImageButton
+        android:id="@+id/btn_settings"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_preferences"
+        android:background="@android:color/transparent"
+        android:contentDescription="设置"
+        android:padding="8dp"/>
+    
+    <!-- 关闭按钮 -->
+    <ImageButton
+        android:id="@+id/btn_close"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_delete"
+        android:background="@android:color/transparent"
+        android:contentDescription="关闭"
+        android:padding="8dp"/>
+    
+    <!-- 更多按钮 -->
+    <ImageButton
+        android:id="@+id/btn_more"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@android:drawable/ic_menu_more"
+        android:background="@android:color/transparent"
+        android:contentDescription="更多"
+        android:padding="8dp"/>
+</LinearLayout>
